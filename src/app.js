@@ -9,6 +9,6 @@ app.use(express.json());
 
 app.use("/animes", animesRoutes);
 
-app.listen(3000, () =>{
+app.listen(process.env.PORT, () =>{
   console.log("Server running on http://localhost:3000");
 });
